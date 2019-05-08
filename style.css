@@ -1,0 +1,281 @@
+html {
+    display: block;
+    color: -internal-root-color;
+}
+
+body {
+    background: #F7F9FC;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #575F7D;
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    font-weight: lighter;
+    display: block;
+    margin: 8px;
+}
+
+/*Não me copia naum!*/
+#animate-area {
+    background-image: url(images/gif.gif);
+    background-position: 0px 0px;''
+    background-repeat: repeat;
+    animation: animatedBackground 40s linear infinite;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #0F0101;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+div {
+    display: block;
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.list-inline i {
+    font-size: 50px;
+    color: rgb(230, 230, 230);
+
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    color: #C1261B;
+    font-size: 20px;
+    font-weight: lighter;
+    font-weight: 500;
+}
+
+.h2-black {
+    color: #0F0101;
+    font-size: 20px;
+    font-weight: lighter;
+    font-weight: 500;
+}
+
+.list-inline li{
+  display: inline-block;
+  padding: 20px;
+}
+
+.list-inline {
+    list-style: none;
+    padding-left: 0px;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #6B72E1;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (max-width: 540px)
+.container {
+    width: 300px;
+}
+
+@media (max-width: 720px)
+.container {
+    width: 800px;
+}
+
+@media (max-width: 960px)
+.container {
+    width: 700px;
+}
+
+.container {
+    width: 700px;
+    margin: 40px auto;
+}
+
+
+.card-white {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.btn-blue {
+    background-color: #6B72E1;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+}
+
+#diego {
+  background-color: #ddd;
+  background-image: url("images/image.jpeg");
+  background-position: 25px;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+#diego:hover{
+  #background: #3e8e41;
+  background-image: url("images/musk.jpg");
+  background-position: -100px;
+}
+
+button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: #C1261B;
+  overflow: hidden;
+}
+
+button::after {
+  content: '';
+  z-index: -1;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  width: 1.25em;
+  transform: translateX(-525%) rotate(35deg);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover::after {
+  transition: transform 0.45s ease-in-out;
+  transform: translateX(200%) rotate(35deg);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 0 auto;
+  border-radius: 50%
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  border: 1px solid #0F0101;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.card-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%
+}
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 10px
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+  margin: 0 auto;
+}
+
+
+
+
+
