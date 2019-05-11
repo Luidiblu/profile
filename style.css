@@ -264,6 +264,7 @@ button:hover::after {
 }
 
 .card-product p {
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 1.4;
   opacity: .7;
@@ -275,8 +276,6 @@ button:hover::after {
   padding: 16px;
   margin: 0 auto;
 }
-
-
 
 
 
